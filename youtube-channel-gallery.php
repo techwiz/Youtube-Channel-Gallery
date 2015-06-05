@@ -633,9 +633,9 @@ class YoutubeChannelGallery_Widget extends WP_Widget {
 
 			foreach ( $entries->entry as $entry ) {
 			
-				//FIX
+				// START FIX DEVICE SUPPORT TECHWIZ
 				if ($entry->title == 'https://youtube.com/devicesupport') { continue; }
-				//END FIX
+				// END FIX
 				
 				// get nodes in media: namespace for media information
 				$media = $entry->children( 'http://search.yahoo.com/mrss/' );
